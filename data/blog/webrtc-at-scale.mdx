@@ -50,7 +50,7 @@ Before two peers can exchange media, they have to exchange a description of what
 
 WebRTC ships no mechanism for actually delivering that description between peers. That's signaling, and the spec deliberately leaves it up to whoever's building on top, typically over WebSockets or HTTP long polling.
 
-![Sequence diagram of Peer A and Peer B exchanging an SDP offer and answer through a signaling server](/static/blogs/webrtc/signaling.png align="center")
+![Sequence diagram of Peer A and Peer B exchanging an SDP offer and answer through a signaling server](/static/blogs/webrtc/signaling.png)
 
 The exchange itself follows a fixed shape, an offer from the peer initiating the call and an answer from the peer receiving it:
 
@@ -79,7 +79,7 @@ An SDP exchange tells each peer what the other supports. It doesn't tell them ho
 
 ICE (Interactive Connectivity Establishment) is the piece that solves that, gathering every address a peer might be reachable at and testing them until one works. Those addresses, called candidates, come from two kinds of servers: STUN (Session Traversal Utilities for NAT) and TURN (Traversal Using Relays around NAT).
 
-![Diagram of a peer gathering host, STUN, and TURN ICE candidates](/static/blogs/webrtc/ice-gathering.png align="center")
+![Diagram of a peer gathering host, STUN, and TURN ICE candidates](/static/blogs/webrtc/ice-gathering.png)
 
 The diagram shows a single peer gathering three candidate types in parallel: a host candidate from its own network interface, a server-reflexive candidate returned by a STUN server (the public IP and port its NAT mapped it to), and a relay candidate allocated on a TURN server. All three are sent to the remote peer as ICE candidates, and whichever pairing connects successfully is the one used for the call.
 
@@ -117,7 +117,7 @@ To see where these pieces actually cost something at scale, I built a signaling 
 - Node.js for the server, since its single-threaded event loop handles many concurrent WebSocket connections without the overhead of a thread per connection, and
 - Express for routing and Socket.IO layered on top for the client connection, falling back to HTTP long polling automatically when a client's network blocks WebSockets outright.
 
-![Architecture diagram of clients connecting via an ALB to Socket.IO pods on EKS, backed by Redis](/static/blogs/webrtc/implementation.png align="center")
+![Architecture diagram of clients connecting via an ALB to Socket.IO pods on EKS, backed by Redis](/static/blogs/webrtc/implementation.png)
 
 The diagram shows browser clients connecting over WebSocket (falling back to HTTP long polling) to an Application Load Balancer, which routes each connection to one of several Socket.IO server pods running in Docker containers on EKS. Every pod shares the same Redis cluster for room state, so it doesn't matter which pod a given client lands on.
 
@@ -198,7 +198,7 @@ Signaling only sets up the connection. What happens to the actual media traffic 
 
 The direct approach connects every peer to every other peer: a full mesh. It needs no media server at all, which makes it cheap and keeps every stream end-to-end, but the number of connections grows quadratically: `n(n-1)/2` for `n` peers. Six peers means 15 connections, and every peer uploads its own stream to the other 5 while downloading their 5 streams in return.
 
-![Full mesh topology diagram of six peers all directly connected](/static/blogs/webrtc/p2p.png align="center")
+![Full mesh topology diagram of six peers all directly connected](/static/blogs/webrtc/p2p.png)
 
 At 1 Mbps per stream, each peer in a 6-person mesh call is pushing 5 Mbps up and pulling 5 Mbps down, just to sustain their own participation. That cost is what makes mesh impractical past a handful of participants. It isn't a server limit, it's every single client's own upload bandwidth and CPU running out first.
 
@@ -206,7 +206,7 @@ At 1 Mbps per stream, each peer in a 6-person mesh call is pushing 5 Mbps up and
 
 An SFU collapses that mesh into a star: every peer sends its stream once, to a central server, which forwards each stream to whichever other peers need it. Upload drops from `(n-1)` connections to 1 regardless of call size, while download stays at `(n-1)` since the SFU still has to hand each peer everyone else's stream individually.
 
-![Star topology diagram of six peers connected through a central SFU server](/static/blogs/webrtc/sfu.png align="center")
+![Star topology diagram of six peers connected through a central SFU server](/static/blogs/webrtc/sfu.png)
 
 Total connections drop from quadratic to linear, `n` instead of `n(n-1)/2`, and a peer's upload cost stops scaling with call size entirely. The SFU itself becomes the thing that has to scale instead, but forwarding packets is far cheaper than decoding and re-encoding them, which is the trade an MCU makes instead.
 
@@ -214,7 +214,7 @@ Total connections drop from quadratic to linear, `n` instead of `n(n-1)/2`, and 
 
 An MCU takes it a step further: every peer's stream is decoded, mixed into one composite stream server-side, then re-encoded and sent back down as a single stream. Upload and download both drop to 1 connection per peer. This is the lowest bandwidth cost of the three approaches.
 
-![Star topology diagram of six peers connected through a central MCU server](/static/blogs/webrtc/mcu.png align="center")
+![Star topology diagram of six peers connected through a central MCU server](/static/blogs/webrtc/mcu.png)
 
 That bandwidth reduction is bought with real-time transcoding for every participant in every call, decode, mix, encode, continuously, which is CPU and often hardware-encoder bound in a way an SFU never is. It also fixes the output layout server-side: a client can't rearrange who's shown where the way it can when it receives separate streams from an SFU.
 

@@ -8,6 +8,7 @@ import Share from '@/components/Share';
 import Tag from '@/components/Tag';
 import TOCInline from '@/components/TOCInline';
 import siteMetadata from '@/data/siteMetadata';
+import formatDate from '@/lib/utils/formatDate';
 import Image from 'next/image';
 import { ReactNode } from 'react';
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter';
@@ -20,13 +21,6 @@ const discussUrl = slug =>
   `https://mobile.twitter.com/search?q=${encodeURIComponent(
     `${siteMetadata.siteUrl}/blog/${slug}`,
   )}`;
-
-const postDateTemplate: Intl.DateTimeFormatOptions = {
-  weekday: 'long',
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-};
 
 interface Props {
   frontMatter: PostFrontMatter;
@@ -65,10 +59,7 @@ export default function PostLayout({
                   <dt className='sr-only'>Published on</dt>
                   <dd className='text-base font-medium leading-6 text-gray-500 dark:text-gray-400'>
                     <time dateTime={date}>
-                      {new Date(date).toLocaleDateString(
-                        siteMetadata.locale,
-                        postDateTemplate,
-                      )}
+                      {formatDate(date, { weekday: 'long' })}
                     </time>
                   </dd>
                 </div>

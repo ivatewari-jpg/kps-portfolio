@@ -1,22 +1,22 @@
 const siteMetadata = {
-  title: 'Karan Pratap Singh',
-  author: 'Karan Pratap Singh',
-  headerTitle: 'Karan Pratap Singh',
+  title: 'Iva Tewari',
+  author: 'Iva Tewari',
+  headerTitle: 'Iva Tewari',
   description:
-    'A software engineer who aims to evolve, innovate, and inspire through technology.',
+    'A product designer focused on creating accessible, user-centered experiences for healthcare and AI platforms.',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://karanpratapsingh.com',
-  siteRepo: 'https://github.com/karanpratapsingh/portfolio',
+  siteUrl: 'https://iva-tewari.webflow.io/', // TODO: Update
+  siteRepo: 'https://github.com/ivatewari/portfolio', // TODO: Update
   siteLogo: '/static/images/logo.png',
   image: '/static/avatar.jpg',
   socialBanner: '/static/banner.png',
-  email: 'contact@karanpratapsingh.com',
-  github: 'https://github.com/karanpratapsingh',
-  twitter: 'https://twitter.com/karan_6864',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
+  email: 'ivatewari@gmail.com',
+  github: 'https://github.com/ivatewari', // TODO: Update
+  twitter: 'https://twitter.com/ivatewari', // TODO: Update
+  facebook: 'https://facebook.com', // TODO: Update
+  youtube: 'https://youtube.com', // TODO: Update
+  linkedin: 'https://linkedin.com/in/iva-tewari-4a6026229',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the

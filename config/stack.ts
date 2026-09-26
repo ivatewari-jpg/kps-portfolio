@@ -1,58 +1,74 @@
 import { Colors } from './colors';
 
 export enum Stack {
-  // Languages
-  go,
-  typescript,
-  javascript,
-  python,
+  // Design Tools
+  figma,
+  canva,
+  adobe,
+  framer,
+  sketch,
 
-  // Frontend
-  react,
-  reactnative,
+  // Design Skills
+  prototyping,
+  wireframing,
+  userflows,
+  responsive,
+  designsystems,
+  typography,
+  colorTheory,
+  layout,
+  iconography,
 
-  // Backend
-  graphql,
-  node,
-  django,
+  // Research
+  userInterviews,
+  surveys,
+  personaDevelopment,
+  abTesting,
+  accessibility,
+  inclusiveDesign,
+  journeyMapping,
+  wcag,
+  informationArchitecture,
+  competitorAnalysis,
+  empathyMapping,
 
-  // Cloud
-  aws,
-  gcp,
+  // Technical
+  html,
+  css,
 
-  // Messaging
-  nats,
-  kafka,
-
-  // Databases
-  arangodb,
-  redis,
-  postgres,
-  mongo,
-
-  // Tools
-  docker,
-  kubernetes,
-  terraform,
+  // Certifications
+  googleUX,
 }
 
 export const WorkStack = [
-  Stack.go,
-  Stack.typescript,
-  Stack.python,
-  Stack.react,
-  Stack.aws,
-  Stack.gcp,
-  Stack.kubernetes,
-  Stack.docker,
-  Stack.terraform,
-  Stack.nats,
-  Stack.kafka,
-  Stack.graphql,
-  Stack.postgres,
-  Stack.redis,
-  Stack.arangodb,
-  // Stack.reactnative,
+  Stack.figma,
+  Stack.canva,
+  Stack.adobe,
+  Stack.framer,
+  Stack.sketch,
+  Stack.prototyping,
+  Stack.wireframing,
+  Stack.userflows,
+  Stack.responsive,
+  Stack.designsystems,
+  Stack.typography,
+  Stack.colorTheory,
+  Stack.layout,
+  Stack.iconography,
+  Stack.userInterviews,
+  Stack.surveys,
+  Stack.personaDevelopment,
+  Stack.abTesting,
+  Stack.accessibility,
+  Stack.inclusiveDesign,
+  Stack.journeyMapping,
+  Stack.wcag,
+  Stack.informationArchitecture,
+  Stack.competitorAnalysis,
+  Stack.empathyMapping,
+  Stack.html,
+  Stack.css,
+  Stack.googleUX,
 ];
 
 type StackInfoMap = {
@@ -61,84 +77,116 @@ type StackInfoMap = {
 };
 
 export const StackInfo: Record<Stack, StackInfoMap> = {
-  [Stack.typescript]: {
-    value: 'TypeScript',
-    color: Colors.typescript,
+  [Stack.figma]: {
+    value: 'Figma',
+    color: Colors.figma,
   },
-  [Stack.javascript]: {
-    value: 'JavaScript',
-    color: Colors.javascript,
+  [Stack.canva]: {
+    value: 'Canva',
+    color: Colors.canva,
   },
-  [Stack.go]: {
-    value: 'Go',
-    color: Colors.go,
+  [Stack.adobe]: {
+    value: 'Adobe Creative Suite',
+    color: Colors.adobe,
   },
-  [Stack.react]: {
-    value: 'React',
-    color: Colors.react,
+  [Stack.framer]: {
+    value: 'Framer',
+    color: Colors.framer,
   },
-  [Stack.reactnative]: {
-    value: 'React Native',
-    color: Colors.reactnative,
+  [Stack.sketch]: {
+    value: 'Sketch',
+    color: Colors.sketch,
   },
-  [Stack.graphql]: {
-    value: 'GraphQL',
-    color: Colors.graphql,
+  [Stack.prototyping]: {
+    value: 'Prototyping',
+    color: Colors.prototyping,
   },
-  [Stack.aws]: {
-    value: 'AWS',
-    color: Colors.aws,
+  [Stack.wireframing]: {
+    value: 'Wireframing',
+    color: Colors.wireframing,
   },
-  [Stack.gcp]: {
-    value: 'Google Cloud',
-    color: Colors.gcp,
+  [Stack.userflows]: {
+    value: 'User Flows',
+    color: Colors.userflows,
   },
-  [Stack.python]: {
-    value: 'Python',
-    color: Colors.python,
+  [Stack.responsive]: {
+    value: 'Responsive Design',
+    color: Colors.responsive,
   },
-  [Stack.node]: {
-    value: 'Node',
-    color: Colors.node,
+  [Stack.designsystems]: {
+    value: 'Design Systems',
+    color: Colors.designsystems,
   },
-  [Stack.django]: {
-    value: 'Django',
-    color: Colors.django,
+  [Stack.typography]: {
+    value: 'Typography',
+    color: Colors.typography,
   },
-  [Stack.nats]: {
-    value: 'NATS',
-    color: Colors.nats,
+  [Stack.colorTheory]: {
+    value: 'Color Theory',
+    color: Colors.colorTheory,
   },
-  [Stack.kafka]: {
-    value: 'Kafka',
-    color: Colors.kafka,
+  [Stack.layout]: {
+    value: 'Layout Design',
+    color: Colors.layout,
   },
-  [Stack.arangodb]: {
-    value: 'ArangoDB',
-    color: Colors.arangodb,
+  [Stack.iconography]: {
+    value: 'Iconography',
+    color: Colors.iconography,
   },
-  [Stack.postgres]: {
-    value: 'Postgres',
-    color: Colors.postgres,
+  [Stack.userInterviews]: {
+    value: 'User Interviews',
+    color: Colors.userInterviews,
   },
-  [Stack.redis]: {
-    value: 'Redis',
-    color: Colors.redis,
+  [Stack.surveys]: {
+    value: 'Surveys',
+    color: Colors.surveys,
   },
-  [Stack.mongo]: {
-    value: 'MongoDB',
-    color: Colors.mongo,
+  [Stack.personaDevelopment]: {
+    value: 'Persona Development',
+    color: Colors.personaDevelopment,
   },
-  [Stack.docker]: {
-    value: 'Docker',
-    color: Colors.docker,
+  [Stack.abTesting]: {
+    value: 'A/B Testing',
+    color: Colors.abTesting,
   },
-  [Stack.kubernetes]: {
-    value: 'Kubernetes',
-    color: Colors.kubernetes,
+  [Stack.accessibility]: {
+    value: 'Accessibility',
+    color: Colors.accessibility,
   },
-  [Stack.terraform]: {
-    value: 'Terraform',
-    color: Colors.terraform,
+  [Stack.inclusiveDesign]: {
+    value: 'Inclusive Design',
+    color: Colors.inclusiveDesign,
+  },
+  [Stack.journeyMapping]: {
+    value: 'Journey Mapping',
+    color: Colors.journeyMapping,
+  },
+  [Stack.wcag]: {
+    value: 'WCAG Guidelines',
+    color: Colors.wcag,
+  },
+  [Stack.informationArchitecture]: {
+    value: 'Information Architecture',
+    color: Colors.informationArchitecture,
+  },
+  [Stack.competitorAnalysis]: {
+    value: 'Competitor Analysis',
+    color: Colors.competitorAnalysis,
+  },
+  [Stack.empathyMapping]: {
+    value: 'Empathy Mapping',
+    color: Colors.empathyMapping,
+  },
+  [Stack.html]: {
+    value: 'HTML',
+    color: Colors.html,
+  },
+  [Stack.css]: {
+    value: 'CSS',
+    color: Colors.css,
+  },
+  [Stack.googleUX]: {
+    value: 'Google UX Certification',
+    color: Colors.googleUX,
   },
 };

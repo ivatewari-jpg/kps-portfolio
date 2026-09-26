@@ -1,46 +1,41 @@
 export const Colors = {
-  // Languages
-  go: '#00ADD8',
-  python: '#4B8BBE',
-  typescript: '#234A84',
-  javascript: '#F7DF1E',
+  // Design Tools
+  figma: '#F24E1E',
+  canva: '#00C4CC',
+  adobe: '#FF0000',
+  framer: '#0055FF',
+  sketch: '#F7B500',
 
-  // Frontend
-  web: '#2D2D2D',
-  react: '#61DAF6',
-  nextjs: '#000000',
+  // Design Skills
+  prototyping: '#8B5CF6',
+  wireframing: '#06B6D4',
+  userflows: '#10B981',
+  responsive: '#F59E0B',
+  designsystems: '#EC4899',
+  typography: '#6366F1',
+  colorTheory: '#F97316',
+  layout: '#84CC16',
+  iconography: '#A855F7',
 
-  // Backend
-  graphql: '#E535AB',
-  node: '#68A063',
-  django: '#092E20',
+  // Research
+  userInterviews: '#EF4444',
+  surveys: '#3B82F6',
+  personaDevelopment: '#22C55E',
+  abTesting: '#EAB308',
+  accessibility: '#14B8A6',
+  inclusiveDesign: '#F43F5E',
+  journeyMapping: '#8B5CF6',
+  wcag: '#06B6D4',
+  informationArchitecture: '#10B981',
+  competitorAnalysis: '#F59E0B',
+  empathyMapping: '#EC4899',
 
-  // Tools, Libs
-  webpack: '#8DD6F9',
-  babel: '#F5DB53',
-  redux: '#764ABC',
+  // Technical
+  html: '#E34F26',
+  css: '#1572B6',
 
-  // Mobile
-  reactnative: '#2D2D2D',
-  android: '#56A036',
-  ios: '#0C76E2',
-
-  // Databases
-  arangodb: '#68A063',
-  postgres: '#336791',
-  mongo: '#4DB33D',
-  redis: '#D82C20',
-
-  // Cloud
-  aws: '#FF9900',
-  gcp: '#4285F4',
-  docker: '#0DB7Ed',
-  kubernetes: '#326CE5',
-  terraform: '#7B42BC',
-
-  // Messaging
-  nats: '#199bfc',
-  kafka: '#000000',
+  // Certifications
+  googleUX: '#4285F4',
 
   // Social
   linkedin: '#0077B5',
@@ -54,13 +49,6 @@ export const Colors = {
 
   // Misc.
   git: '#F1502F',
-  microservices: '#1890ff',
-  distributedsystems: '#404040',
-  discuss: '#404040',
-  testing: '#049C64',
-  backend: '#404040',
-  devops: '#059F00',
-  serverless: '#000000',
   resume: '#EEEBFF',
   opensource: '#26BE00',
   tutorial: '#4dd0e1',

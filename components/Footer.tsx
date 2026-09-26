@@ -1,4 +1,5 @@
 import SocialIcons from '@/components/SocialIcons';
+import siteMetadata from '@/data/siteMetadata';
 import { memo } from 'react';
 
 function Footer(): React.ReactElement {
@@ -8,7 +9,7 @@ function Footer(): React.ReactElement {
     <div className='mt-4 flex flex-col items-center py-8 font-light dark:text-white lg:py-8'>
       <SocialIcons />
       <span className='mt-4 text-xs font-light lg:mt-8'>
-        &copy; {year} Karan Pratap Singh
+        &copy; {year} {siteMetadata.author}
       </span>
     </div>
   );

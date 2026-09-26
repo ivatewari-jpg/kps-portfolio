@@ -1,22 +1,19 @@
 ---
-name: Karan Pratap Singh
-shortname: Karan
+name: Iva Tewari
+shortname: Iva
 avatar: /static/avatar.jpg
-occupation: Software Engineer
-company: Apple
-resume: /static/karan_resume.pdf
-email: contact@karanpratapsingh.com
-twitter: https://twitter.com/karan_6864
-linkedin: https://www.linkedin.com/in/karan99
-github: https://github.com/karanpratapsingh
+occupation: Product Designer
+company: i3 Digital Health
+resume: /static/resume.pdf
+email: ivatewari@gmail.com
+linkedin: https://linkedin.com/in/iva-tewari-4a6026229
+github: https://github.com/ivatewari
 ---
 
-A software engineer who aims to evolve, innovate, and inspire through technology.
+A product designer focused on creating accessible, user-centered experiences for healthcare and AI platforms.
 
-Currently, I am working as a **Software Engineer** at **Apple**.
+Currently, I am working as a **Product Designer** at **i3 Digital Health**, designing an all-in-one patient support app centered on community support, appointment coordination, and treatment navigation for cancer patients and their families.
 
-Previously, I was a Senior Software Engineer at [Guardian Life](https://www.guardianlife.com), and a Senior Engineer at [Curebase](https://www.curebase.com) where I contributed to the creation of a decentralized clinical trial platform and scaling infrastructure with an emphasis on security, HIPAA compliance, and GDPR compliance.
+Previously, as a **Product Design Trainee** at i3 Digital Health, I led end-to-end UX/UI design of the patient experience for OncoTrials, an AI-powered clinical trial matching platform — designing 25+ screens from user research through developer handoff, pitched to investors and doctors. I designed onboarding flows for 4 distinct personas (patients, clinicians, hospitals, pharma companies) verified by oncology doctors at AIIMS, and built a Figma-based design system for KOL Intelligence, a platform for pharma companies to identify oncology Key Opinion Leaders.
 
-Prior to that, I worked with the Digitization Program Office (DPO) at the [Smithsonian Institution](https://www.si.edu) as a consulting Software Developer in collaboration with the Office of the Chief Information Officer (OCIO).
-
-Outside of work, I've written more than 50 technical articles that have received over 2 million views. I've self-published two books, worked on US patents, and made contributions to open-source projects like Meta's [React Native (v0.60)](https://reactnative.dev/blog/2019/06/12/react-native-open-source-update).
+Outside of work, I've conducted end-to-end user research for an AI model catalogue platform, analyzing competitors like Vercel, LiteLLM, Portkey, and OpenRouter, and designed in-platform model management workflows with improved filtering, comparison tools, and pricing transparency.

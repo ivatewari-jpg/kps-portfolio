@@ -35,8 +35,8 @@ function Contact(): React.ReactElement {
             Got a question or an idea? Let's connect! Email me at
             <a
               className='ml-2 cursor-pointer !font-normal !text-black !no-underline dark:!text-white'
-              href='mailto:contact@karanpratapsingh.com'
-              aria-label='Send an email to Karan Pratap Singh'
+              href={`mailto:${siteMetadata.email}`}
+              aria-label='Send an email to {siteMetadata.email}'
             >
               <RoughNotation
                 show
@@ -46,7 +46,7 @@ function Contact(): React.ReactElement {
                 animationDuration={2000}
                 color={randomColor}
               >
-                contact@karanpratapsingh.com
+                {siteMetadata.email}
               </RoughNotation>
             </a>
           </p>

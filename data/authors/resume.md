@@ -4,7 +4,7 @@ shortname: Iva
 avatar: /static/avatar.jpg
 occupation: Product Designer
 company: i3 Digital Health
-resume: /static/resume.pdf
+resume: /static/iva_resume.pdf
 email: ivatewari@gmail.com
 linkedin: https://linkedin.com/in/iva-tewari-4a6026229
 github: https://github.com/ivatewari

@@ -31,7 +31,7 @@ const LayoutWrapper = ({ children }: Props) => {
             <MobileNav />
           </div>
         </header>
-        <main className='mb-auto'>{children}</main>
+        <main className='flex flex-1 flex-col'>{children}</main>
         <Footer />
       </div>
     </SectionContainer>

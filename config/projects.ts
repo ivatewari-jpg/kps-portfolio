@@ -33,7 +33,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'AI Model Catalogue Platform',
+    title: 'AI Model Catalogue',
     slug: 'ai-model-catalogue',
     banner: '/static/projects/ai-model-catalogue/banner.png',
     website: 'https://www.behance.net/gallery/247170707/AI-Model-Catalogue',
@@ -41,7 +41,8 @@ export const projects: Project[] = [
       'Conducted end-to-end user research for an AI model catalogue platform by analyzing competitor products such as Vercel, LiteLLM, Portkey, and OpenRouter, along with developer pain points surfaced through 7 GitHub issues. Defined 2 challenge statements, user needs, and 5 new product opportunities. Used Claude to accelerate research synthesis and feature ideation. Designed in-platform model management workflows allowing users to add/update models directly through the UI. Enhanced model discovery with better filtering, comparison tools, lifecycle indicators, pricing transparency, and clearer model information.',
     shortDescription:
       'AI model catalogue - user research, competitive analysis, model management workflows.',
-    repository: null,
+    repository:
+      'https://www.figma.com/design/q87i6cntDVbBZJ4VvJXQQa/AI-Model-Registry?node-id=424-962&p=f&t=xxo3yVMEtbYhqXpN-0',
     stack: [
       Stack.figma,
       Stack.userInterviews,

@@ -13,14 +13,6 @@
   }
 }
 
-.banner {
-  min-height: 70vh;
-
-  @screen lg {
-    min-height: 95vh;
-  }
-}
-
 .social-icons:last-child .icon {
   @apply mr-0;
 }

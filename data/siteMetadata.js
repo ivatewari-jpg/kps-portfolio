@@ -6,16 +6,16 @@ const siteMetadata = {
     'A product designer focused on creating accessible, user-centered experiences for healthcare and AI platforms.',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://iva-tewari.webflow.io/', // TODO: Update
-  siteRepo: 'https://github.com/ivatewari/portfolio', // TODO: Update
+  siteUrl: 'https://iva-tewari-silk.vercel.app/',
+  siteRepo: 'https://github.com/ivatewari-jpg/kps-portfolio',
   siteLogo: '/static/images/logo.png',
-  image: '/static/avatar.jpg',
+  image: '/static/avatar.jpeg',
   socialBanner: '/static/banner.png',
   email: 'ivatewari@gmail.com',
-  github: 'https://github.com/ivatewari', // TODO: Update
-  twitter: 'https://twitter.com/ivatewari', // TODO: Update
-  facebook: 'https://facebook.com', // TODO: Update
-  youtube: 'https://youtube.com', // TODO: Update
+  github: 'https://github.com/ivatewari-jpg',
+  twitter: 'https://twitter.com/ivatewari', // TODO: remove
+  facebook: 'https://facebook.com', // TODO: remove
+  youtube: 'https://youtube.com', // TODO: remove
   linkedin: 'https://linkedin.com/in/iva-tewari-4a6026229',
   locale: 'en-US',
   analytics: {

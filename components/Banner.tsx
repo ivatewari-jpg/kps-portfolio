@@ -13,7 +13,7 @@ function Banner(props: BannerProps): React.ReactElement {
   const [aboutColor, contactColor] = useRandomColorPair();
 
   return (
-    <div className='fade-in banner flex flex-1 flex-col justify-center px-6 py-10 dark:text-white lg:px-10'>
+    <div className='fade-in flex flex-1 flex-col justify-center px-6 py-12 dark:text-white lg:px-10'>
       <h1 className='text-3xl font-bold dark:text-white lg:text-5xl'>
         Hi, I am {frontMatter.shortname}
       </h1>

@@ -1,13 +1,13 @@
 ---
 name: Iva Tewari
 shortname: Iva
-avatar: /static/avatar.jpg
+avatar: /static/avatar.jpeg
 occupation: Product Designer
 company: i3 Digital Health
 resume: /static/iva_resume.pdf
 email: ivatewari@gmail.com
 linkedin: https://linkedin.com/in/iva-tewari-4a6026229
-github: https://github.com/ivatewari
+github: https://github.com/ivatewari-jpg
 ---
 
 A product designer focused on creating accessible, user-centered experiences for healthcare and AI platforms.

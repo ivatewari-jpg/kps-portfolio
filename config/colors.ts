@@ -27,12 +27,21 @@ export const Colors = {
   journeyMapping: '#8B5CF6',
   wcag: '#06B6D4',
   informationArchitecture: '#10B981',
-  competitorAnalysis: '#F59E0B',
+  competitiveAnalysis: '#F59E0B',
   empathyMapping: '#EC4899',
 
   // Technical
   html: '#E34F26',
   css: '#1572B6',
+  javascript: '#F7DF1E',
+  typescript: '#3178C6',
+  react: '#61DAFB',
+  nextjs: '#000000',
+
+  // Design Skills
+  interactionDesign: '#FF6B6B',
+  uiDesign: '#4ECDC4',
+  usabilityTesting: '#45B7D1',
 
   // Certifications
   googleUX: '#4285F4',

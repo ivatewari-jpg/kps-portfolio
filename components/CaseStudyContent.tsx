@@ -160,39 +160,23 @@ function CaseStudyBlocks({ blocks }: { blocks: CaseStudyBlock[] }) {
                 </table>
               </div>
             );
-          case 'opportunities':
+          case 'competitive-analysis':
             return (
-              <div key={`opportunities-${blockIndex}`} className='space-y-6'>
-                {block.items.map(item => (
-                  <article
-                    key={item.opportunity}
-                    className='border-l-2 border-primary-500 pl-4'
-                  >
-                    <h4 className='text-lg font-semibold'>
-                      {item.opportunity}
-                    </h4>
-                    <dl className='mt-3 grid gap-4 sm:grid-cols-3'>
-                      <div>
-                        <dt className='text-xs font-semibold uppercase text-gray-500 dark:text-gray-400'>
-                          Gap
-                        </dt>
-                        <dd className='mt-1 leading-6'>{item.gap}</dd>
-                      </div>
-                      <div>
-                        <dt className='text-xs font-semibold uppercase text-gray-500 dark:text-gray-400'>
-                          Opportunity
-                        </dt>
-                        <dd className='mt-1 leading-6'>{item.opportunity}</dd>
-                      </div>
-                      <div>
-                        <dt className='text-xs font-semibold uppercase text-gray-500 dark:text-gray-400'>
-                          Feature
-                        </dt>
-                        <dd className='mt-1 leading-6'>{item.feature}</dd>
-                      </div>
-                    </dl>
-                  </article>
-                ))}
+              <div
+                key={`competitive-analysis-${blockIndex}`}
+                className='space-y-8'
+              >
+                <div>
+                  <h3 className='mb-2 text-xl font-semibold'>{block.title}</h3>
+                  <p className='leading-7'>{block.description}</p>
+                </div>
+                {block.images.length > 0 && (
+                  <div className='flex flex-col'>
+                    {block.images.map(image => (
+                      <ProjectFigure key={image.src} image={image} />
+                    ))}
+                  </div>
+                )}
               </div>
             );
           case 'image':
@@ -269,7 +253,7 @@ export function CaseStudySections({
 
 export function CaseStudyGallery({ images }: { images: ProjectImage[] }) {
   return (
-    <div className='grid gap-6 md:grid-cols-2'>
+    <div className='flex flex-col'>
       {images.map(image => (
         <ProjectFigure key={image.src} image={image} />
       ))}

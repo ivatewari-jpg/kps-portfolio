@@ -10,65 +10,50 @@ export enum Stack {
 
   // Design Skills
   prototyping,
-  wireframing,
-  userflows,
   responsive,
   designsystems,
-  typography,
-  colorTheory,
-  layout,
-  iconography,
+  interactionDesign,
+  uiDesign,
 
   // Research
-  userInterviews,
-  surveys,
-  personaDevelopment,
   abTesting,
   accessibility,
   inclusiveDesign,
-  journeyMapping,
   wcag,
-  informationArchitecture,
-  competitorAnalysis,
-  empathyMapping,
+  usabilityTesting,
+  competitiveAnalysis,
 
   // Technical
   html,
   css,
-
-  // Certifications
-  googleUX,
+  javascript,
+  typescript,
+  react,
+  nextjs,
 }
 
+// list of skills on about
 export const WorkStack = [
   Stack.figma,
-  Stack.canva,
   Stack.adobe,
   Stack.framer,
   Stack.sketch,
   Stack.prototyping,
-  Stack.wireframing,
-  Stack.userflows,
   Stack.responsive,
   Stack.designsystems,
-  Stack.typography,
-  Stack.colorTheory,
-  Stack.layout,
-  Stack.iconography,
-  Stack.userInterviews,
-  Stack.surveys,
-  Stack.personaDevelopment,
+  Stack.interactionDesign,
+  Stack.uiDesign,
   Stack.abTesting,
   Stack.accessibility,
   Stack.inclusiveDesign,
-  Stack.journeyMapping,
   Stack.wcag,
-  Stack.informationArchitecture,
-  Stack.competitorAnalysis,
-  Stack.empathyMapping,
+  Stack.usabilityTesting,
   Stack.html,
   Stack.css,
-  Stack.googleUX,
+  Stack.javascript,
+  Stack.typescript,
+  Stack.react,
+  Stack.nextjs,
 ];
 
 type StackInfoMap = {
@@ -101,14 +86,6 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
     value: 'Prototyping',
     color: Colors.prototyping,
   },
-  [Stack.wireframing]: {
-    value: 'Wireframing',
-    color: Colors.wireframing,
-  },
-  [Stack.userflows]: {
-    value: 'User Flows',
-    color: Colors.userflows,
-  },
   [Stack.responsive]: {
     value: 'Responsive Design',
     color: Colors.responsive,
@@ -116,34 +93,6 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
   [Stack.designsystems]: {
     value: 'Design Systems',
     color: Colors.designsystems,
-  },
-  [Stack.typography]: {
-    value: 'Typography',
-    color: Colors.typography,
-  },
-  [Stack.colorTheory]: {
-    value: 'Color Theory',
-    color: Colors.colorTheory,
-  },
-  [Stack.layout]: {
-    value: 'Layout Design',
-    color: Colors.layout,
-  },
-  [Stack.iconography]: {
-    value: 'Iconography',
-    color: Colors.iconography,
-  },
-  [Stack.userInterviews]: {
-    value: 'User Interviews',
-    color: Colors.userInterviews,
-  },
-  [Stack.surveys]: {
-    value: 'Surveys',
-    color: Colors.surveys,
-  },
-  [Stack.personaDevelopment]: {
-    value: 'Persona Development',
-    color: Colors.personaDevelopment,
   },
   [Stack.abTesting]: {
     value: 'A/B Testing',
@@ -157,25 +106,13 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
     value: 'Inclusive Design',
     color: Colors.inclusiveDesign,
   },
-  [Stack.journeyMapping]: {
-    value: 'Journey Mapping',
-    color: Colors.journeyMapping,
-  },
   [Stack.wcag]: {
     value: 'WCAG Guidelines',
     color: Colors.wcag,
   },
-  [Stack.informationArchitecture]: {
-    value: 'Information Architecture',
-    color: Colors.informationArchitecture,
-  },
-  [Stack.competitorAnalysis]: {
-    value: 'Competitor Analysis',
-    color: Colors.competitorAnalysis,
-  },
-  [Stack.empathyMapping]: {
-    value: 'Empathy Mapping',
-    color: Colors.empathyMapping,
+  [Stack.usabilityTesting]: {
+    value: 'Usability Testing',
+    color: Colors.usabilityTesting,
   },
   [Stack.html]: {
     value: 'HTML',
@@ -185,8 +122,32 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
     value: 'CSS',
     color: Colors.css,
   },
-  [Stack.googleUX]: {
-    value: 'Google UX Certification',
-    color: Colors.googleUX,
+  [Stack.javascript]: {
+    value: 'JavaScript',
+    color: Colors.javascript,
+  },
+  [Stack.typescript]: {
+    value: 'TypeScript',
+    color: Colors.typescript,
+  },
+  [Stack.react]: {
+    value: 'React',
+    color: Colors.react,
+  },
+  [Stack.nextjs]: {
+    value: 'Next.js',
+    color: Colors.nextjs,
+  },
+  [Stack.interactionDesign]: {
+    value: 'Interaction Design',
+    color: Colors.interactionDesign,
+  },
+  [Stack.uiDesign]: {
+    value: 'UI Design',
+    color: Colors.uiDesign,
+  },
+  [Stack.competitiveAnalysis]: {
+    value: 'Competitive Analysis',
+    color: Colors.competitiveAnalysis,
   },
 };

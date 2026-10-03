@@ -22,12 +22,6 @@ export interface ProjectImage {
   height?: number;
 }
 
-export interface Opportunity {
-  opportunity: string;
-  gap: string;
-  feature: string;
-}
-
 export type CaseStudyBlock =
   | { type: 'paragraph'; text: string }
   | { type: 'list'; items: string[] }
@@ -37,7 +31,12 @@ export type CaseStudyBlock =
       rows: (string | string[])[][];
       caption?: string;
     }
-  | { type: 'opportunities'; items: Opportunity[] }
+  | {
+      type: 'competitive-analysis';
+      title: string;
+      description: string;
+      images: ProjectImage[];
+    }
   | { type: 'image'; image: ProjectImage }
   | { type: 'before-after'; before: ProjectImage; after: ProjectImage };
 
@@ -134,22 +133,49 @@ export const projects: Project[] = [
               ],
             ],
           },
+          {
+            type: 'competitive-analysis',
+            title: 'Competitive Analysis',
+            description:
+              'A review of existing solutions helped identify key gaps and opportunities for the product.',
+            images: Array.from({ length: 7 }, (_, index) => ({
+              src: `/static/projects/ai-model-catalogue/competitive-analysis/img-${
+                index + 1
+              }.png`,
+              alt: `Competitive analysis image ${index + 1}`,
+            })),
+          },
         ],
       },
     ],
     improvedDesign: [],
-    finalDesigns: [],
+    finalDesigns: [
+      {
+        src: '/static/projects/ai-model-catalogue/final-designs/Home.svg',
+        alt: 'AI Model Catalogue home screen',
+        width: 1440,
+        height: 1024,
+      },
+      {
+        src: '/static/projects/ai-model-catalogue/final-designs/Detailed%20view.svg',
+        alt: 'AI Model Catalogue detailed model view',
+        width: 1440,
+        height: 1024,
+      },
+      {
+        src: '/static/projects/ai-model-catalogue/final-designs/Detailed%20view%20-%20Updation%20form.svg',
+        alt: 'AI Model Catalogue model update form',
+        width: 1440,
+        height: 1024,
+      },
+    ],
     stack: [
       Stack.figma,
-      Stack.userInterviews,
-      Stack.surveys,
-      Stack.competitorAnalysis,
-      Stack.empathyMapping,
-      Stack.informationArchitecture,
-      Stack.wireframing,
       Stack.prototyping,
-      Stack.userflows,
-      Stack.responsive,
+      Stack.interactionDesign,
+      Stack.designsystems,
+      Stack.uiDesign,
+      Stack.competitiveAnalysis,
     ],
     screenshots: [],
     subProjects: [],

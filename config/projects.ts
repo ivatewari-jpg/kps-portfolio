@@ -141,7 +141,7 @@ export const projects: Project[] = [
             images: Array.from({ length: 7 }, (_, index) => ({
               src: `/static/projects/ai-model-catalogue/competitive-analysis/img-${
                 index + 1
-              }.png`,
+              }.svg`,
               alt: `Competitive analysis image ${index + 1}`,
             })),
           },

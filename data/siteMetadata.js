@@ -6,11 +6,11 @@ const siteMetadata = {
     'A product designer focused on creating accessible, user-centered experiences for healthcare and AI platforms.',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://iva-tewari-silk.vercel.app/',
+  siteUrl: 'https://iva-tewari-silk.vercel.app',
   siteRepo: 'https://github.com/ivatewari-jpg/kps-portfolio',
   siteLogo: '/static/images/logo.png',
   image: '/static/avatar.jpeg',
-  socialBanner: '/static/banner.png',
+  socialBanner: '/static/banner.png?v=2',
   email: 'ivatewari@gmail.com',
   github: 'https://github.com/ivatewari-jpg',
   twitter: 'https://twitter.com/ivatewari', // TODO: remove
